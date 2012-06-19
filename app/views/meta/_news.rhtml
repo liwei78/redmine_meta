@@ -1,0 +1,5 @@
+<% if news.summary.present? && news.description.present? %>
+  <% description = strip_textile(news.description, news.project) %>
+  <% meta_description(news.summary) %>
+  <% meta_keywords(extract_keywords(description)) %>
+<% end %>

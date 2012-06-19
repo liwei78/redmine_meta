@@ -1,0 +1,19 @@
+At the moment Redmine always uses "Redmine" as META description and "issue,bug,tracker" as META keywords and does not provide any way to change values of these META tags. That's what this plugin was developed for.
+
+The "Meta tags" plugin adds functions for modifying META description and keywords from layout files. It also changes META description for start page, project overview page, wiki pages, news and issues:
+For the start page it uses the welcome text;
+For project overview page it uses shortened project description;
+For Wiki pages it uses shortened Wiki text;
+For news it uses news summary;
+For issues it uses shortened issue description.
+In addition the plugin uses words which appear most often on these pages as the META keywords.
+
+Author:	Andriy Lesyuk
+Website:	http://projects.andriylesyuk.com//projects/redmine-meta
+Code repository:	http://subversion.andriylesyuk.com/redmine-meta
+Registered on:	2011-03-25
+Current version:	 0.1.0
+Compatible with:	 Redmine 1.0.x, 1.1.x, 1.2.x, 1.3.x
+
+Fix:
+2012-6-19 liwei fixed

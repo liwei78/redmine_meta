@@ -1,0 +1,5 @@
+<% if Setting.welcome_text.present? %>
+  <% welcome_text = strip_textile(Setting.welcome_text) %>
+  <% meta_description(welcome_text.gsub(/^(.{255}[^\n\r]*).*$/m, '\1...').strip) %>
+  <% meta_keywords(extract_keywords(welcome_text)) %>
+<% end %>

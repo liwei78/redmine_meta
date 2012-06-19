@@ -1,0 +1,10 @@
+--- /usr/share/redmine/app/views/news/show.rhtml	2011-04-29 12:33:42.000000000 +0300
++++ show.rhtml	2011-10-04 13:39:55.000000000 +0300
+@@ -36,6 +36,7 @@
+ <div class="wiki">
+ <%= textilizable(@news.description) %>
+ </div>
++<%= call_hook(:view_news_show_left, :news => @news) %>
+ <br />
+ 
+ <div id="comments" style="margin-bottom:16px;">

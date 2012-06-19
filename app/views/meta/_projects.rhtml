@@ -1,0 +1,5 @@
+<% if project.description.present? %>
+  <% description = strip_textile(project.description, project) %>
+  <% meta_description(description.gsub(/^(.{255}[^\n\r]*).*$/m, '\1...').strip) %>
+  <% meta_keywords(extract_keywords(description)) %>
+<% end %>
